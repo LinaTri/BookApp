@@ -30,11 +30,12 @@ class _BookListPageState extends State<BookListPage> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     var bookcontroller;
-    var consumer = Consumer(
+    var consumer = Consumer<BookController>(
       child: const Center(child: CircularProgressIndicator()),
       builder: (context, controlller, child) => Container(
-        child: bookcontroller!.bookList == null
+        child: bookController!.bookList == null
             ? child
             : ListView.builder(
                 itemCount: bookController!.bookList!.books!.length,
