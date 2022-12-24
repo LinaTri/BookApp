@@ -124,7 +124,7 @@ class _DetailBookPageState extends State<DetailBookPage> {
                             try {
                               (await canLaunchUrl(uri))
                                   ? launchUrl(uri)
-                                  : ("tidak berhasil navigasi");
+                                  : ("tidak berhasil yaah ;(");
                             } catch (e) {
                               (e);
                             }
